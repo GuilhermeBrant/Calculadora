@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#calculadora{
+	background-color: #747070;
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 600px;
+	top: 200px;
+	border-radius: 10px;
+}
+
+#numeros{
+	width: 280px;
+	height: 30px;
+	margin-left: 9px;
+	margin-top: 9px;
+	border-radius: 5px;
+}
+
+#numero{
+	width: 280px;
+	height: 30px;
+	margin-left: 9px;
+	margin-top: 9px;
+	border-radius: 5px;
+}
+
+.botao{
+	font-size: 30px;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 10px 17px;;
+}
+
+#resultado{
+	width: 280px;
+	height: 30px;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	border-radius: 5px;
+}
+
+.resu{
+	position: absolute;
+	top: 320px;
+	left: 8px;
+}
