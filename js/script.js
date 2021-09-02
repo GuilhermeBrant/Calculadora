@@ -1,51 +1,31 @@
 // JavaScript Document
 
-
-
-var soMa=document.querySelector('#soma').addEventListener('click', soma);
-
-function soma(){
-	var valor1=parseFloat(document.getElementById('numeros').value);
-	var valor2=parseFloat(document.getElementById('numero').value);
-	
-	var calc= valor1 + valor2;
-	
-	document.getElementById('resultado').value= calc;
-	
+function insert(num)
+{
+    var numero = document.getElementById('visualizacao').innerHTML;
+    document.getElementById('visualizacao').innerHTML = numero + num;
 }
 
-var subTracao=document.querySelector('#subtracao').addEventListener('click', subtracao);
-
-function subtracao(){
-	var valor1=parseFloat(document.getElementById('numeros').value);
-	var valor2=parseFloat(document.getElementById('numero').value);
-	
-	var calc= valor1 - valor2;
-	
-	document.getElementById('resultado').value= calc;
-	
+function clean()
+{
+    document.getElementById('visualizacao').innerHTML = "";
 }
 
-var diviSao=document.querySelector('#divisao').addEventListener('click', divisao);
-
-function divisao(){
-	var valor1=parseFloat(document.getElementById('numeros').value);
-	var valor2=parseFloat(document.getElementById('numero').value);
-	
-	var calc= valor1 / valor2;
-	
-	document.getElementById('resultado').value= calc;
-	
+function back()
+{
+    var resultado = document.getElementById('visualizacao').innerHTML;
+    document.getElementById('visualizacao').innerHTML = resultado.substring(0, resultado.length -1);
 }
 
-var multiPlitacacao=document.querySelector('#multiplicacao').addEventListener('click', multi);
-
-function multi(){
-	var valor1=parseFloat(document.getElementById('numeros').value);
-	var valor2=parseFloat(document.getElementById('numero').value);
-	
-	var calc= valor1 * valor2;
-	
-	document.getElementById('resultado').value= calc;
-	
+function calcular()
+{
+    var resultado = document.getElementById('visualizacao').innerHTML;
+    if(resultado)
+        {
+            document.getElementById('visualizacao').innerHTML = eval(resultado);
+        }
+        else
+        {
+                document.getElementById('visualizacao').innerHTML = "Nada..."
+        }
 }
