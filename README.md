@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://pt-br.reactjs.org/">🔗 Calculadora.js</a>
+    🔗 Calculadora.js
 </h1>
 <p align="center">🖩 Calculadora feita com HTML, CSS e JavaScript.</p>
-![image](https://user-images.githubusercontent.com/69855851/132077960-309fdbdc-912e-48f6-8226-cf742ab944b0.png)
+![image](https://user-images.githubusercontent.com/69855851/132078147-867f36e5-06be-43bd-9f89-60a622e769d5.png)
